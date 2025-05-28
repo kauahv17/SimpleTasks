@@ -1,0 +1,149 @@
+body {
+  background-color: #eee;
+  font-family: Arial, sans-serif;
+}
+
+.bem-vindo {
+  margin-right: auto;
+  margin-left: 100px;
+}
+
+.task-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px #00000015;
+  overflow: hidden;
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+}
+
+.task-header h5 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.task-header small {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.task-body {
+  display: none;
+  background: #dcdcdc;
+  padding: 24px;
+  padding-bottom: 15px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 14px;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+  position: relative;
+  font-size: 1.3rem;
+}
+
+.task-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 30px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+.task-item span {
+  flex: 1;
+  text-align: left;
+  margin-right: 80px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.task-item input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  position: absolute;
+  right: 50px;
+}
+
+.task-body.amarelo .task-item::after {
+  background-color: #FFD700;
+}
+
+.task-body.verde .task-item::after {
+  background-color: #00C853;
+}
+
+.task-body.cinza .task-item::after {
+  background-color: #A9A9A9;
+}
+
+.toggle-btn {
+  border: none;
+  border-radius: 14px;
+  padding: 16px;
+  width: 72px;
+  font-size: 1.6rem;
+  color: black;
+}
+
+.toggle-btn i {
+  transition: transform 0.3s;
+}
+
+.toggle-btn.amarelo {
+  background-color: #FFD700;
+}
+
+.toggle-btn.verde {
+  background-color: #00C853;
+}
+
+.toggle-btn.cinza {
+  background-color: #A9A9A9;
+}
+
+.task-card.expanded .task-body {
+  display: block;
+}
+
+.task-card.expanded .toggle-btn i {
+  transform: rotate(180deg);
+}
+
+.task-body .btn {
+  font-size: 1.2rem;
+  padding: 8px 20px;
+  border-radius: 10px;
+}
+
+#baixo-dos-cards {
+  margin-top: 30px;
+}
+
+#new-task-bt {
+  inline-size: 100%;
+  height: 40px;
+  font-size: 1.1rem;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#new-task-bt:hover {
+  background-color: #9b0000;
+  color: #ffffff;
+}

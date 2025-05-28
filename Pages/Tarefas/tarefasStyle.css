@@ -1,0 +1,170 @@
+body {
+  background-color: #eeeeee;
+  font-family: Arial, sans-serif;
+}
+
+
+.header-list {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+  margin-bottom: 2px;
+}
+
+h4 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.btn-group-custom {
+  display: flex;
+  gap: 15px;
+}
+
+#qntd-tasks {
+  color: black;
+  opacity: 0.5;
+  margin-left: auto;
+  margin-right: 15px;
+  align-self: flex-end;
+}
+
+hr {
+  margin-top: 0px;
+}
+
+.btn-custom {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 4px 16px;
+  font-size: 1rem;
+  background-color: white;
+  color: #333;
+  transition: all 0.2s ease;
+}
+
+.btn-custom.active {
+  background-color: #FFD700;
+  font-weight: bold;
+}
+
+.btn-custom.green.active {
+  background-color: #00C853;
+  color: white;
+}
+
+.btn-custom.gray.active {
+  background-color: #888;
+  color: white;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 12px;
+  height: 80px;
+  position: relative;
+}
+
+.task-item.expanded {
+  height: auto;
+}
+
+.task-content {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  flex: 1;
+  position: relative;
+  min-width: 0;
+}
+
+.task-content::after {
+  content: '';
+  position: absolute;
+  right: 50px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: #9b0000;
+}
+
+.task-bar {
+  width: 18px;
+  height: 100%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-left: 8px;
+}
+
+.task-bar.amarelo {
+  background-color: #FFD700;
+}
+
+.task-bar.verde {
+  background-color: #00C853;
+}
+
+.task-bar.cinza {
+  background-color: #A9A9A9;
+}
+
+.task-text {
+  margin-left: 12px;
+  flex: 1;
+  min-width: 0;
+  max-width: calc(100% - 110px);
+}
+
+.task-text strong {
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.task-text p {
+  font-size: 1rem;
+  margin: 0;
+  color: #555;
+  white-space: pre-line;
+  overflow: hidden;
+  max-height: 1.2em;
+}
+
+.task-item.expanded .task-text p {
+  max-height: none;
+}
+
+.task-actions {
+  display: flex;
+  gap: 30px;
+  margin-right: 20px;
+  padding-right: 16px;
+}
+
+.task-actions img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.task-actions input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+/* Esconde listas por padrão */
+.task-list {
+  display: none;
+}
+
+.task-list.active {
+  display: block;
+}

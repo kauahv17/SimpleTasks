@@ -1,0 +1,41 @@
+body {
+    background-color: #eee;
+    font-family: Arial, sans-serif;
+}
+
+.cor-button{
+    background-color: #f4a261;
+}
+
+.cor-texto-button{
+    color: #f4a261;
+}
+
+.navbar-nav{
+    gap: 2px;
+    margin-right: 40%;
+    margin-left: 50px;
+}
+
+.navbar-brand img{
+    width: 3vw;
+    margin-left: 85px;
+}
+
+.nav-link{
+    color: black;
+    transition: color 0.3s ease;
+    margin-right: 15px;
+    
+    padding: 10px 15px; 
+  }
+
+.nav-link:hover {
+    color: #ffffff;
+}
+
+header{
+    background-color: #9b0000;
+    padding: 0;
+}
+

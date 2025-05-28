@@ -1,0 +1,51 @@
+body {
+  background-color: #eee;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.form-login {
+  border: 1px #9b0000;
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.group-bt {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.login-bt {
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #666;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin: 0 5px;
+}
+
+.login-bt:hover {
+  background-color: #9b0000;
+  color: #ffffff;
+}

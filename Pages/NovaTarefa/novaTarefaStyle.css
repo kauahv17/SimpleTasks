@@ -1,0 +1,124 @@
+body {
+    background-color: #eeeeee;
+    font-family: Arial, sans-serif;
+  }
+
+  label {
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-bottom: -20px;
+  }
+
+  hr {
+    margin-top: 0px;
+    margin-bottom: -5px;
+  }
+
+  .form-container {
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    transform: scale(1);
+    transform-origin: top center;
+  }
+  
+  #tarefaForm {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .form-left,
+  .form-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-left {
+    width: 940px;
+  }
+  
+  label {
+    font-weight: bold;
+    font-size: 1.6rem;;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  textarea {
+    height: 500px;
+    resize: none;
+  }
+  
+  .form-right {
+    width: 300px;
+    justify-content: flex-start;
+  }
+  
+  .estado-options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .estado-options input[type="radio"] {
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #8B0000;
+    border-radius: 3px;
+    margin-right: 8px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .estado-options input[type="radio"]:checked::before {
+    content: '';
+    display: block;
+    width: 70%;
+    height: 70%;
+    background-color: #8B0000;
+    border-radius: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .estado-options label {
+    font-size: 1rem;
+    color: black;
+    align-self:flex-start;
+  }
+  
+  .estado-options div {
+    display: flex;
+    align-items: center;
+  }
+  
+  .btn-salvar {
+    margin-top: 30px;
+    padding: 8px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color:#666;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .btn-salvar:hover {
+    background-color: #9b0000;
+    color: white;
+  }
+  
